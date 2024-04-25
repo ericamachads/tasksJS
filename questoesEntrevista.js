@@ -227,3 +227,12 @@ EX:1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 
 */
 const addBinary = (a, b) => (a + b).toString(2);
+/*
+Move the first letter of each word to the end of it, then add "ay" to the end of the word.
+*/
+function pigIt(str) {
+  const arr = str.split(' ');
+  return arr
+    .map((word) => word.slice(1, word.length) + word[0] + 'ay')
+    .join(' ');
+}
